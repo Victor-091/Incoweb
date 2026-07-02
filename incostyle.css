@@ -1,0 +1,268 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body { font-family: 'Segoe UI', sans-serif; margin: 0; }
+
+/* --- BARRA SUPERIOR --- */
+.top-bar {
+    background-color: #3b719f;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.social-links a {
+    color: white !important;
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* --- HERO SECTION (IMAGEN FIJA) --- */
+.hero-container {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('gonzV.JPG') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    background: transparent !important;
+    padding: 30px 0;
+    z-index: 1000;
+}
+
+/* --- LOGO RECTANGULAR --- */
+.logo-link { text-decoration: none !important; }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 55px;
+    width: auto;
+    border-radius: 4px;
+    object-fit: contain;   
+    background: white;     
+    padding: 5px;          
+}
+
+.brand-name { 
+    color: white; 
+    font-weight: bold; 
+    font-size: 26px; 
+}
+
+/* --- MENÚ DESPLEGABLE --- */
+.menu-toggle { background: none; border: none; cursor: pointer; }
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white !important;
+    margin: 6px 0;
+}
+
+.navbar-custom {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 2000;
+}
+
+.navbar-custom.active { display: block; }
+.nav-list { list-style: none; padding: 0; margin: 0; }
+.nav-list li { border-bottom: 1px solid #eee; padding: 15px 25px; }
+.nav-list a { text-decoration: none; color: #333; font-weight: bold; }
+
+.bg-gray { background-color: #f5f5f5; }
+.indent-1 { padding-left: 50px !important; }
+
+/* Scroll suave */
+html { scroll-behavior: smooth; }
+
+section { scroll-margin-top: 100px; }
+
+/* --- SERVICIOS --- */
+#Servicios i { transition: transform 0.3s ease; }
+#Servicios .col-md-4:hover i { transform: scale(1.1); }
+
+/* --- TARJETAS DE PROYECTOS Y VENTAS (LADO A LADO) --- */
+.card-propiedad {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 100%; /* Asegura que todas midan lo mismo en la fila */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-propiedad:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.imagen-container {
+    width: 100%;
+    height: 200px; /* Altura optimizada para cuadrícula de 4 columnas */
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita deformación de fotos */
+}
+
+.info-container {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.codigo {
+    font-size: 0.75rem;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.precio {
+    color: #3b719f;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.ubicacion {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* Cuadrícula de detalles internos */
+.detalles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.item {
+    font-size: 0.8rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Badge de Ventas */
+.badge-venta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+.icon-primary {
+    color: #3b719f;
+}
+
+/* Reutilizamos la clase icon-primary que creamos antes */
+.icon-primary {
+    color: #3b719f;
+    font-size: 1.2rem;
+}
+
+/* Estilo personalizado para el botón */
+.btn-primary-custom {
+    background-color: #3b719f;
+    border-color: #3b719f;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #2a5274;
+    border-color: #2a5274;
+    color: white;
+}
+
+/* Mejora visual para los inputs al hacer foco */
+.form-control:focus {
+    border-color: #3b719f;
+    box-shadow: 0 0 0 0.25rem rgba(59, 113, 159, 0.25);
+}
+
+/* Evita que la imagen se salga de tu cuadro actual */
+.imagen-container {
+    overflow: hidden;
+}
+
+/* Efecto de aumento suave */
+.hover-zoom {
+    transition: transform 0.5s ease;
+}
+
+.card-propiedad:hover .hover-zoom {
+    transform: scale(1.1);
+}
+
+/* Estilo para que el modal se vea tipo Galería Lujosa */
+#modalGaleria .modal-content {
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+#modalGaleria img {
+    max-height: 80vh;
+    object-fit: contain;
+    background-color: #000;
+}
+
+#modalGaleria .carousel-item img {
+    background-color: #000;
+    /* Esto asegura que si la foto es vertical, no rompa el diseño */
+    max-height: 80vh; 
+}
+
+.card-propiedad {
+    transition: transform 0.3s ease;
+}
+
+.card-propiedad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCOMOM🏢</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="incostyle.css">
+</head> 
+<body>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="contact-links">
+                <span class="ms-3"><i class="fa-solid fa-phone"></i> +1(809) 884-8551</span>
+                <span class="ms-3"><i class="fa-solid fa-envelope"></i>  incomom00@gmail.com</span>
+            </div>
+           <div class="social-links">
+    <a href="https://instagram.com/incomomrd" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    
+    <!-- Reemplaza con la URL pública de tu empresa -->
+    <a href="https://www.linkedin.com/company/inmobiliaria-constructora-montero-morillo/posts/?feedView=all target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    
+    <!-- Reemplaza con tu número real (sin el signo + ni ceros iniciales) -->
+    <a href="https://wa.me/8098492574" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+        </div>
+    </div>
+
+    <section class="hero-container">
+        <header class="main-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href="incoweb.html" class="logo-link">
+                    <div class="logo-container">
+                        <img src="02.png" alt="Logo" class="logo-img">
+                        <h1 class="brand-name mb-0">INCOMOM</h1>
+                    </div>
+                </a>
+          
+                <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                    <span></span><span></span><span></span>
+                </button>
+ 
+                <nav class="navbar-custom" id="navbarMenu">
+                    <ul class="nav-list">
+                        <li class="bg-gray"><a href="#Nosotros">Nosotros</a></li>
+                        <li class="indent-1"><a href="#Servicios">Servicios</a></li>
+                        <li class="bg-gray"><a href="#Proyectos">Proyectos</a></li>
+                        <li class="indent-1"><a href="#Proyectos-desarrollo">Proyectos en Desarrollo</a></li>
+                        <li><a href="#Contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+  <section id="Nosotros" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Nuestra Empresa</h2>
+        <p class="text-muted mx-auto about-text">
+            En INCOMOM nos dedicamos a la gestión y desarrollo de proyectos inmobiliarios de alta calidad. 
+            Nuestro compromiso es ofrecer hogares que combinen modernidad, seguridad y confort.
+        </p>
+    </div>
+</section>
+
+   <section id="Servicios" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Servicios</h2>
+        <div class="row text-center g-4">
+            <!-- Icono 1 -->
+            <div class="col-md-4">
+                <i class="fa-solid fa-house-chimney fa-3x mb-3 icon-primary"></i>
+                <h4>Venta de Inmuebles</h4>
+                <p class="text-muted">Asesoría completa para encontrar tu hogar ideal.</p>
+            </div>
+            <!-- Icono 2 -->
+            <div class="col-md-4">
+                <i class="fa-solid fa-handshake fa-3x mb-3 icon-primary"></i>
+                <h4>Gestión de Proyectos</h4>
+                <p class="text-muted">Desarrollamos proyectos residenciales desde cero.</p>
+            </div>
+            <!-- Icono 3 -->
+            <div class="col-md-4">
+                <i class="fa-solid fa-file-invoice-dollar fa-3x mb-3 icon-primary"></i>
+                <h4>Asesoría Financiera</h4>
+                <p class="text-muted">Te ayudamos con los trámites bancarios y préstamos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="Proyectos" class="py-5 bg-light">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2 class="fw-bold m-0 text-uppercase">Proyectos Realizados</h2>
+            <span class="badge bg-dark">12 Propiedades</span>
+        </div>
+        
+        <div class="row g-4"> 
+            <!-- Proyecto 1 -->
+           <!-- Ejemplo de una tarjeta: Repite esto para cada proyecto -->
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria"
+         data-titulo="Residencial GONZALES IV"
+         data-fotos="GonzIV.JPG, verdes.JPG, Perlamarina.JPG, Casablna.JPG, Eco.jpeg"
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="GonzIV.JPG" alt="Residencial GONZALES IV" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial GONZALES IV</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            <p class="text-muted small mb-3">
+                            Exclusivo proyecto de solo 16 apartamentos. Ubicación estratégica con fácil acceso a vías principales, centros educativos y plazas comerciales.
+                        </p>
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria"
+         data-titulo="Residencial Verdes"
+         data-fotos="verdes.JPG, 02.png, Apart.jpeg"
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="verdes.JPG" alt="Residencial Verdes" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial Verdes</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            <p class="text-muted small mb-3">
+                            Un concepto exclusivo de viviendas con un encanto arquitectónico tradicional, techos de tejas y un entorno seguro que brinda una sensación única de hogar.
+                        </p>
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria"
+         data-titulo="Residencial Res.3"
+         data-fotos="Res.3.JPG, 02.png, Apart.jpeg"
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="Res.3.JPG" alt="Residencial Res.3" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial Res.3</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            Arquitectura de vanguardia con acabados limpios y modernos. Destaca por su excelente iluminación natural y una estética impecable en una zona de constante crecimiento.
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Residencial Perla Marina IV" 
+         data-fotos="Perlamarina.JPG" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="Perlamarina.JPG" alt="Residencial Perla Marina" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial Perla Marina IV</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            Vanguardia y comodidad en un solo lugar. Este edificio de apartamentos contemporáneo, con sus distintivos balcones de vidrio azul, ofrece un estilo de vida moderno y céntrico.
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Residencial Resn"
+         data-fotos="Resn.JPG, verdes.JPG" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="Resn.JPG" alt="Residencial Resn" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial Resn</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            Un edificio de apartamentos moderno, con una fachada de color gris azulado claro, acentos beige y blanco, y un techo de color teja roja. La propiedad está rodeada por una pared perimetral y algunas plantas y árboles. La foto se tomó de día, con luz solar.
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Residencial Casablna"
+         data-fotos="Casablna.JPG, Apart.jpeg" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="Casablna.JPG" alt="Residencial Casablna" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial Casablna</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            Una villa o casa unifamiliar blanca de estilo más contemporáneo, con un techo plano blanco y una terraza en el segundo piso. Tiene una piscina y un área ajardinada visibles, con una pared perimetral blanca y azul. Hay un vehículo estacionado en la entrada.
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Apartamento Moderno"
+         data-fotos="Apart.jpeg, CasaI.jpeg" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="Apart.jpeg" alt="Apartamento Moderno" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Apartamento Moderno</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            Un edificio de apartamentos moderno y alto, con balcones de vidrio azul, paneles de madera y acabados en blanco y marrón. La foto muestra los pisos superiores y el techo con algunas estructuras, como una pérgola. El cielo está nublado.
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Residencial Casa I"
+         data-fotos="CasaI.jpeg, Eco.jpeg" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="CasaI.jpeg" alt="Residencial Casa I" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial Casa I</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            Una casa de estilo tradicional caribeño con un techo de tejas de terracota rojas, paredes de color crema y rejas de seguridad ornamentales de color marrón oscuro sobre ventanas y balcones. La foto está tomada de día con luz brillante.
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Residencial Galicia"
+         data-fotos="Galicia.JPG, Perlamarina.JPG" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="Galicia.JPG" alt="Residencial Galicia" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial Galicia</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            Tu espacio ideal para crecer. Residencial Galicia combina una excelente distribución interna con un diseño exterior único, garantizándote la tranquilidad y el confort que tu familia merece.
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Residencial Eco"
+         data-fotos="Eco.jpeg, verdes.JPG" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="Eco.jpeg" alt="Residencial Eco" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial Eco</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            Exclusividad y frescura en un entorno diseñado para el bienestar. Con una fachada distintiva rodeada de áreas verdes, esta propiedad redefine el concepto de un hogar acogedor y sofisticado.
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Residencial GONZALES IV - Bloque B"
+         data-fotos="GonzIV.JPG" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="GonzIV.JPG" alt="Residencial GONZALES IV" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial GONZALES IV</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card-propiedad" 
+         data-bs-toggle="modal" 
+         data-bs-target="#modalGaleria" 
+         data-titulo="Residencial GONZALES IV - Bloque C"
+         data-fotos="GonzIV.JPG" 
+         style="cursor: pointer;">
+        <div class="imagen-container">
+            <img src="GonzIV.JPG" alt="Residencial GONZALES IV" class="hover-zoom">
+        </div>
+        <div class="info-container">
+            <p class="codigo">Entregado en 2020</p>
+            <h4 class="titulo">Residencial GONZALES IV</h4>
+            <p class="ubicacion"><i class="fa-solid fa-location-dot"></i> Sto. Dgo. Este</p>
+            <div class="detalles-grid">
+                <div class="item">🛏️ 3</div>
+                <div class="item">🚿 2.5</div>
+                <div class="item">🚗 2</div>
+                <div class="item">📐 140m²</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div> 
+</div> 
+</section>
+
+
+<section id="proyectos-desarrollo" class="py-5"> 
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold text-uppercase display-6">Proyectos en Desarrollo</h2>
+                <hr class="mx-auto" style="width: 60px; height: 3px; background-color: #0d6efd; opacity: 1;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4" 
+                 data-bs-toggle="modal" 
+                 data-bs-target="#modalGaleria"
+                 data-titulo="Residencial GONZÁLEZ VI"
+                 data-fotos="espana.jpeg"
+                 style="cursor: pointer;">
+                 
+                <div class="card h-100 shadow-sm">
+                    <div class="imagen-container position-relative">
+                        <span class="badge bg-dark position-absolute top-0 start-0 m-2 px-2 py-1 small d-flex align-items-center rounded shadow-sm">
+                            <i class="fa-solid fa-helmet-safety me-1 text-warning"></i> En Construcción
+                        </span>
+                        
+                        <img src="espana.jpeg" alt="Residencial GONZÁLEZ VI" class="img-fluid hover-zoom card-img-top">
+                        <div class="badge-financiero position-absolute bottom-0 end-0 m-2">Alta Valorización</div>
+                    </div>
+                    
+                    <div class="info-container p-3">
+                        <p class="codigo text-primary fw-bold mb-1">Exclusividad y Confort</p>
+                        <h4 class="titulo mb-2">González VI</h4>
+                        <p class="ubicacion text-muted small mb-2">
+                            <i class="fa-solid fa-location-dot text-danger me-1"></i> Calle 8 #114, Ens. Isabelita, SDE
+                        </p>
+                        <p class="text-muted small mb-3">
+                            Exclusivo proyecto de solo 16 apartamentos. Ubicación estratégica con fácil acceso a vías principales, centros educativos y plazas comerciales.
+                        </p>
+                        <div class="detalles-grid d-flex flex-wrap gap-2 text-muted small mb-3">
+                            <span class="badge bg-light text-dark border"><i class="fa-solid fa-bed me-1"></i> 3 Hab.</span>
+                            <span class="badge bg-light text-dark border"><i class="fa-solid fa-bath me-1"></i> 2.5 Baños</span>
+                            <span class="badge bg-light text-dark border"><i class="fa-solid fa-car me-1"></i> 2 Parq.</span>
+                            <span class="badge bg-light text-dark border"><i class="fa-solid fa-ruler-combined me-1"></i> 135 m²</span>
+                        </div>
+                        <div class="border-top pt-2 d-flex justify-content-between text-center text-muted extra-iconos">
+                            <small data-bs-toggle="tooltip" title="Sala Amplia"><i class="fa-solid fa-couch"></i> Sala</small>
+                            <small data-bs-toggle="tooltip" title="Comedor Independiente"><i class="fa-solid fa-utensils"></i> Comedor</small>
+                            <small data-bs-toggle="tooltip" title="Cocina Moderna"><i class="fa-solid fa-kitchen-set"></i> Cocina</small>
+                            <small data-bs-toggle="tooltip" title="Excelente Iluminación"><i class="fa-solid fa-sun"></i> Iluminación</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Contacto" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Contáctanos</h2>
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <h4 class="mb-4">Información de contacto</h4>
+                <p class="text-muted">¿Tienes alguna duda sobre nuestros proyectos? Estamos aquí para ayudarte.</p>
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-location-dot mt-1 me-3 icon-primary"></i>
+                    <p>Santo Domingo, República Dominicana</p>
+                </div>
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-phone mt-1 me-3 icon-primary"></i>
+                    <p>+1(809) 884-8551</p>
+                </div>
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-envelope mt-1 me-3 icon-primary"></i>
+                    <p>incomom00@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <form action="https://formspree.io/f/xdawakvl" method="POST" id="contact-form" class="bg-white p-4 shadow-sm rounded needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" name="nombre" class="form-control shadow-none" id="nombre" placeholder="Tu nombre" required minlength="3">
+                            <div class="invalid-feedback">Por favor, ingresa al menos 3 caracteres.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" name="email" class="form-control shadow-none" id="email" placeholder="correo@ejemplo.com" required>
+                            <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                        </div>
+                        <div class="col-12">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" name="asunto" class="form-control shadow-none" id="asunto" placeholder="Interés en proyecto" required>
+                            <div class="invalid-feedback">El asunto es obligatorio.</div>
+                        </div>
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea name="mensaje" class="form-control shadow-none" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            <div class="invalid-feedback">No olvides escribir tu mensaje.</div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" id="submit-btn" class="btn btn-primary-custom w-100 py-2">Enviar Mensaje</button>
+                        </div>
+                    </div>
+                    <div id="form-status" class="mt-3 text-center"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="modalGaleria" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark border-0">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-white" id="modalTitulo">Cargando...</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div id="carouselProyectos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="galeria-dinamica">
+                        </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+<!-- 1. Librería de Bootstrap (¡Indispensable para el clic!) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 2. Tu lógica personalizada -->
+    <script src="formulario.js"></script>
+</body>
+</html>
